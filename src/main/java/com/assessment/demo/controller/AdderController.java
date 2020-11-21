@@ -19,9 +19,7 @@ public class AdderController {
 	public AdderEntity getSums(@PathVariable("sum") int id) {
 		AdderEntity adder = new AdderEntity();
 		
-		
-		int sum = id + 10;
-		adder.setSum(Integer.toString(sum));
+		adder.setSum(Integer.toString(id + 10));
 		
 		return adder;
 	}
