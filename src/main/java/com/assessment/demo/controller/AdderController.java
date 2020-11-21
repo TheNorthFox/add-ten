@@ -21,7 +21,7 @@ public class AdderController {
 		
 		
 		int sum = id + 10;
-		adder.setSum(sum);
+		adder.setSum(Integer.toString(sum));
 		
 		return adder;
 	}
