@@ -1,15 +1,34 @@
 package com.assessment.demo.model;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class AdderEntity {
 	
 	 private int sum;
 
+	public AdderEntity(int sum) {
+		this.sum = sum;
+	}
+	
+	public AdderEntity() {
+		
+	}
+
+	public int getSum() {
+		return sum;
+	}
+
+	public void setSum(int sum) {
+		this.sum = sum;
+	}
+
+	@Override
+	public String toString() {
+		return "AdderEntity [sum=" + sum + "]";
+	}
+	 
+	 
+
+	
 }
