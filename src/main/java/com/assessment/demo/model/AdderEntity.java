@@ -10,9 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AdderEntity {
 	
-	
-	private int id;
-	
-	private String sum;
+	 private int sum;
 
 }

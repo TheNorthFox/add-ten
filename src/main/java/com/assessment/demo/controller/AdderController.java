@@ -14,14 +14,14 @@ import com.assessment.demo.model.AdderEntity;
 public class AdderController {
 	
 	
-	@RequestMapping(value = "/{id}", method = RequestMethod.GET,
+	@RequestMapping(value = "/{sum}", method = RequestMethod.GET,
     produces = MediaType.APPLICATION_JSON_VALUE)
-	public AdderEntity getSums(@PathVariable("id") int id) {
+	public AdderEntity getSums(@PathVariable("sum") int id) {
 		AdderEntity adder = new AdderEntity();
 		
 		
 		int sum = id + 10;
-		adder.setSum(Integer.toString(sum));
+		adder.setSum(sum);
 		
 		return adder;
 	}
