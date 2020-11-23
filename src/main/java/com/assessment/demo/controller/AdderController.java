@@ -32,9 +32,9 @@ public class AdderController {
 		
 		String result = " Add-Ten Example\n"
 				+ " \n Use the link below \n "
-				+ " \n https://pre-assessment-backend.herokuapp.com \n"
+				+ " \n https://pre-assessment-backend.herokuapp.com/api \n"
 				+ " \n add a number at the end of the link\n "
-				+ "\n Example: https://pre-assessment-backend.herokuapp.com/13 \n"
+				+ "\n Example: https://pre-assessment-backend.herokuapp.com/api/13 \n"
 				+ ""
 				+ "\n { \n "
 				+ " \"sum \"  : \" 23 \" "
