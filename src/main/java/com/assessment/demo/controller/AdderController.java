@@ -2,6 +2,7 @@ package com.assessment.demo.controller;
 
 
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,6 +23,24 @@ public class AdderController {
 		adder.setSum(Integer.toString(id + 10));
 		
 		return adder;
+	}
+	
+	// "printing \"this\" in quotes"
+	
+	@GetMapping
+	public String addTen() {
+		
+		String result = " Add-Ten Example\n"
+				+ " \n Use the link below \n "
+				+ " \n https://pre-assessment-backend.herokuapp.com \n"
+				+ " \n add a number at the end of the link\n "
+				+ "\n Example: https://pre-assessment-backend.herokuapp.com/13 \n"
+				+ ""
+				+ "\n { \n "
+				+ " \"sum \"  : \" 23 \" "
+				+ " \n }";
+		
+		return result;
 	}
 	
 	
