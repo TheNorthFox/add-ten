@@ -35,9 +35,8 @@ public class AdderController {
 				+ " \n https://pre-assessment-backend.herokuapp.com/api \n"
 				+ " \n add a number at the end of the link\n "
 				+ "\n Example: https://pre-assessment-backend.herokuapp.com/api/13 \n"
-				+ ""
-				+ "\n { \n "
-				+ " \"sum \"  : \" 23 \" "
+				+ "\n { "
+				+ "\n \" sum \"  : \" 23 \" "
 				+ " \n }";
 		
 		return result;
