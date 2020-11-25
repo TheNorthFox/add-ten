@@ -27,7 +27,7 @@ public class AdderController {
 	
 	// "printing \"this\" in quotes"
 	
-	@GetMapping
+	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public String addTen() {
 		
 		String result = " Add-Ten Example\n"
