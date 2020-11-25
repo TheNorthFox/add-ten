@@ -30,16 +30,34 @@ public class AdderController {
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
 	public String addTen() {
 		
-		String result = " Add-Ten Example\n"
+		String result = " Pre-Assessment Exercise\n"
 				+ " \n Use the link below \n "
 				+ " \n https://pre-assessment-backend.herokuapp.com/api \n"
-				+ " \n add a number at the end of the link\n "
-				+ "\n Example: https://pre-assessment-backend.herokuapp.com/api/13 \n"
+				+ " \n add a number at the end of the link\n \n \n"
+				+ " Add-Ten Example\n"
+				+ "\n Example 1: https://pre-assessment-backend.herokuapp.com/api/13 \n"
 				+ "\n { "
 				+ "\n \" sum \"  : \" 23 \" "
-				+ " \n }";
+				+ " \n }"
+				+ " \n \n \n"
+				+ " Two Sum Example\n"
+				+ "\n Example 2: https://pre-assessment-backend.herokuapp.com/api/5/7 \n"
+				+ "	\n { "
+				+ "\n \" sum \"  : \" 12 \" "
+				+ "\n }"; 
 		
 		return result;
+	}
+	
+	@GetMapping(value = "/{id}/{num}",
+		    produces = MediaType.APPLICATION_JSON_VALUE)
+	public AdderEntity getTwoSum(@PathVariable("id") int id, @PathVariable("num") int num) {
+		AdderEntity adder = new AdderEntity();
+		
+		adder.setSum(Integer.toString(id + num));
+		
+		return adder;
+		
 	}
 	
 	
